@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andromeda BeyBlade X</title>
+<link href="static/css/fora.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+
+  <!-- NAV E LOGO -->
+<nav>
+  <div class="logo">
+    Andromeda
+    <span>Bey Camp</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#" class="active" data-section="eventos" onclick="switchSection('eventos', this)">Eventos</a></li>
+    <li><a href="#" data-section="contato" onclick="switchSection('contato', this)">Contato</a></li>
+    <li><a href="#" data-section="loja" onclick="switchSection('loja', this)">Loja</a></li>
+  </ul>
+</nav>
+
+<!-- CAPA/HERO -->
+<section class="hero" id="hero">
+  <div class="ring-container">
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+    <div class="ring ring-3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">&#9670; Beyblade X Community &#9670;</div>
+    <h1 class="hero-title">
+      <span class="line1">Andromeda</span>
+      <span class="line2">Bey Camp</span>
+    </h1>
+    <p class="hero-sub">&#9670;Organização de Eventos BeyBlade X&#9670;</p>
+    <div class="hero-cta">
+      <a href="#" class="btn-primary" onclick="switchSection('eventos', document.querySelector('[data-section=eventos]'))">Ver Eventos</a>
+      <a href="#" class="btn-outline" onclick="switchSection('loja', document.querySelector('[data-section=loja]'))">Acessar Loja</a>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTOS -->
+<section class="section active" id="section-eventos">
+  <div class="section-header">
+    <div class="section-label">&#9670; Competições &#9670;</div>
+    <h2 class="section-title">Eventos Beyblade X</h2>
+  </div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-img-placeholder">🌀</div>
+      <div class="card-body">
+        <div class="card-tag">Torneio Nacional</div>
+        <div class="card-title">Andromeda BX Open 2025</div>
+        <p class="card-desc">O maior torneio de Beyblade X do Brasil. Competidores de todo o país disputam na arena galática.</p>
+        <div class="card-meta">
+          <span>📅 Março 2025</span>
+          <span>📍 São Paulo</span>
+        </div>
+      </div>
+    </div>
+    <!--<li><a href="#" data-section="contato" onclick="switchSection('contato', this)">Contato</a></li>-->
+    <div class="card" onclick="switchSection">
+      
+      <div class="card-img-placeholder">⚡</div>
+      <div class="card-body">
+        <div class="card-tag">Campeonato Regional</div>
+        <div class="card-title">Galaxy Cup – Sul vs Norte</div>
+        <p class="card-desc">Confronto épico entre as melhores equipes regionais. Apenas os mais fortes avançam.</p>
+        <div class="card-meta">
+          <span>📅 Abril 2025</span>
+          <span>📍 Curitiba</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🏆</div>
+      <div class="card-body">
+        <div class="card-tag">Liga Mensal</div>
+        <div class="card-title">Andromeda Monthly League</div>
+        <p class="card-desc">Campeonato mensal aberto para todos os níveis. Ganhe pontos e suba no ranking galáctico.</p>
+        <div class="card-meta">
+          <span>📅 Todo Mês</span>
+          <span>📍 Online + Presencial</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-placeholder">🛸</div>
+      <div class="card-body">
+        <div class="card-tag">Novatos</div>
+        <div class="card-title">Zero Gravity — Estreantes BX</div>
+        <p class="card-desc">Torneio especial para quem está começando. Aprenda, compita e evolua no universo Beyblade X.</p>
+        <div class="card-meta">
+          <span>📅 Fevereiro 2025</span>
+          <span>📍 Rio de Janeiro</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="section" id="section-contato">
+  <div class="section-header">
+    <div class="section-label">&#9670; Fale Conosco &#9670;</div>
+    <h2 class="section-title">Contato</h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">💬</div>
+        <div>
+          <div class="contact-item-label">WhatsApp</div>
+          <div class="contact-item-value">Acesse pelo Instagram</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📸</div>
+        <div>
+          <div class="contact-item-label">Instagram</div>
+          <a href="https://www.instagram.com/andromedabeycamp?igsh=aHRycHAzYjEwMG8y">@andromedabeycamp</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-item-label">Localização</div>
+          <a href="https://maps.app.goo.gl/mFAbM3NNjBBT44j99">Utopia Games & Food 🍕🕹️</a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="handleForm(event)">
+      <div class="form-group">
+        <label class="form-label">Seu Nome</label>
+        <input class="form-input" type="text" placeholder="Capitão Estelar" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label">E-mail</label>
+        <input class="form-input" type="email" placeholder="seuemail@galáxia.com" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Mensagem</label>
+        <textarea class="form-textarea" placeholder="Escreva sua mensagem..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="align-self:flex-start">Enviar Mensagem</button>
+    </form>
+  </div>
+</section>
+
+<!-- LOJA -->
+<section class="section" id="section-loja">
+  <div class="section-header">
+    <div class="section-label">&#9670; Produtos &#9670;</div>
+    <h2 class="section-title">Loja Andromeda</h2>
+  </div>
+  <div class="shop-grid">
+    <div class="shop-card">
+      <!--<div class="shop-img">⚙️</div>-->
+      <img src="static/img/bey_img.png" alt="Starter Kit BX" class="shop-img">
+      <div class="shop-body">
+        <div class="shop-name">Starter Kit BX</div>
+        <div class="shop-price">R$ 149,90 <small>Frete grátis acima de R$200</small></div>
+        <a href="https://www.mercadolivre.com.br/pio-sword-dran-3-60f-beyblade-x-conjunto-de-brinquedo-tipo-ataque-giro-direita-inclui-lancador-e-cremalheira-a-partir-de-8-anos/p/MLB39957068#polycard_client=search-desktop&search_layout=grid&position=5&type=product&tracking_id=2ed5e368-e623-4431-93fa-e1e019840188&wid=MLB3858246185&sid=search">
+          <button class="btn-cart">COMPRAR NA Loja</button></a>
+      </div>
+    </div>
+    <div class="shop-card">
+      <div class="shop-img">👕</div>
+      <div class="shop-body">
+        <div class="shop-name">Camiseta Andromeda</div>
+        <div class="shop-price">R$ 79,90 <small>Edição limitada</small></div>
+        <button class="btn-cart" onclick="">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="shop-card">
+      <div class="shop-img">🏟️</div>
+      <div class="shop-body">
+        <div class="shop-name">Arena BX Oficial</div>
+        <div class="shop-price">R$ 239,90 <small>Arena homologada</small></div>
+        <button class="btn-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="shop-card">
+      <div class="shop-img">🎒</div>
+      <div class="shop-body">
+        <div class="shop-name">Bolsa Tática Pro</div>
+        <div class="shop-price">R$ 119,90 <small>Capacidade 12 beyblades</small></div>
+        <button class="btn-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="shop-card">
+      <div class="shop-img">🔩</div>
+      <div class="shop-body">
+        <div class="shop-name">Pack Peças Avançadas</div>
+        <div class="shop-price">R$ 189,90 <small>Customização BX</small></div>
+        <button class="btn-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="shop-card">
+      <div class="shop-img">🌌</div>
+      <div class="shop-body">
+        <div class="shop-name">BeyBlade Galaxy Edition</div>
+        <div class="shop-price">R$ 299,90 <small>Exclusivo Andromeda</small></div>
+        <button class="btn-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>VALADÃO & P.Y.R.O.O.O</strong><br>
+  <span style="margin-top: 0.5rem; display:block;">© 2026 — Todos os direitos reservados</span>
+</footer>
+
+<script>
+  function switchSection(name, el) {
+    event && event.preventDefault();
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById('section-' + name).classList.add('active');
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    if (el) el.classList.add('active');
+
+    // scroll to section
+    document.getElementById('section-' + name).scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function handleForm(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    btn.textContent = '✓ Mensagem Enviada!';
+    btn.style.background = 'linear-gradient(135deg, #00d4ff, #7b2ff7)';
+    btn.style.border = 'none';
+    btn.style.color = '#fff';
+    setTimeout(() => {
+      btn.textContent = 'Enviar Mensagem';
+      btn.style.background = '';
+      btn.style.border = '';
+      btn.style.color = '';
+      e.target.reset();
+    }, 3000);
+  }
+
+  // Nav default active = eventos
+  document.querySelector('[data-section="eventos"]').classList.add('active');
+</script>
+
+</body>
+</html>
+
